@@ -1,0 +1,106 @@
+<html>
+  {%load static%}
+    <head>
+        <style type='text/css'>
+            body, html {
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                color: black;
+                display: table;
+                font-family: Georgia, serif;
+                font-size: 24px;
+                text-align: center;
+            }
+            .container {
+                border: 20px solid tan;
+                width: 750px;
+                height: 563px;
+                display: table-cell;
+                vertical-align: middle;
+            }
+            .logo {
+                color:tan;
+            }
+            img {
+                height: 120px;
+                position: absolute;
+                left:40px;
+                top: 30px;
+            }
+            .img-1{
+                height: 120px;
+                position: absolute;
+                right: 1000px;
+                top: 20px;
+            }
+            .img-2{
+                height: 10px;
+                position: relative;
+                right: -570px;
+                top: 230px;
+                
+
+                
+            }
+           
+            
+           
+
+            .marquee {
+                color: tan;
+                font-size: 48px;
+                margin: 20px;
+            }
+            .assignment {
+                margin: 20px;
+            }
+            .person {
+                border-bottom: 2px solid black;
+                font-size: 32px;
+                font-style: italic;
+                margin: 20px auto;
+                width: 400px;
+            }
+            .reason {
+                margin: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="logo">
+                <div class="img">
+                    <img src="{% static 'images/logoo.png'%}">
+                    
+                </div>
+                <div class="img-1">
+                    <img src="{% static 'images/cap.jpg'%}" >
+
+                </div>
+                <div class="img-2">
+                    <img src="{% static 'images/qr.jpg'%}" >
+
+                </div>
+            </div>
+
+            <div class="marquee">
+                Certificate of Completion
+            </div>
+
+            <div class="assignment">
+                This certificate is presented to
+            </div>
+
+            <div class="person">
+                
+            </div>
+
+            <div class="reason">
+                For Completion the course of study prescribed by Misr University for Science and Technology,
+                and therefore awarded this certificate of Graduation
+            </div>
+        </div>
+    </body>
+</html>

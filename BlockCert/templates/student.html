@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+{% load static %}
+{% comment %} icons !!  {% endcomment %}
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> 
+<style>*{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+
+}
+
+html , body {
+height: 100%; 
+margin: 0px;
+}
+
+.background {
+height: 100%; 
+margin: 0px;
+background-size: cover;
+background-repeat: no-repeat;
+object-fit: none;
+background-position: center;
+}
+
+
+.navv {
+background-color: #F5F3C1;
+width:auto;
+position:relative;
+display: flex;
+justify-content: space-between;
+padding: 5px 200px;
+align-items:center;
+text-decoration: none;
+color: rgb(0, 0, 0);
+
+}
+
+.mail , .num{
+color: rgb(0, 0, 0);
+text-decoration: none;
+font-weight: 500;
+font-size: 17;
+
+}
+a:link, a:visited {
+color: rgb(0, 0, 0);
+text-align: center;
+text-decoration: none;
+display: inline-block;
+}
+a:hover, a:active {
+background-color: #3c96afcc;
+box-shadow: 8px 10px 28px 0 #002530be;
+}
+
+h1 span{
+
+color:rgb(0, 71, 43);
+padding:  43px 145px;
+display: inline-block;
+}
+
+.logo{
+float: right;
+padding-right: 9%;
+}
+
+form {
+background-color: #18171783;
+width: 500px;
+height: 250px;
+perspective: 500px;
+text-align: center;
+margin-left: 32% ;
+margin-top:5% ;
+}
+
+.subfo{
+text-align: center;
+position:absolute;
+width:60%;
+padding: 5px 50px 5px  0px;
+top: 45%;
+left: 20%;
+transform: translate3d(0, -50%, 35px) perspective(100px);
+}
+ion-icon {
+font-size: 30px;
+position: absolute;
+display: initial;
+}
+
+input{
+
+margin-bottom:13px;
+padding: 15px 50px;
+height: 20px;
+width: 300px;
+border-radius: 4px;
+letter-spacing: 0.5px;
+}
+
+h4{
+color: #fffdf7;
+font-size:13pt;
+padding: 0px 0px 0px 35px;
+}
+
+.btn{  
+background-color:#3c96afcc;
+color: #fffdf7;
+font-size:15pt;
+width:230px;
+height:30px;
+position:absolute;
+border-radius:27px;
+left: 27%;
+bottom:8%;
+
+}
+
+.btn:hover{  
+text-align: center;
+background-color: rgb(35, 129, 92);
+color: #fffdf7;
+box-shadow: 0 8px 24px 0 rgba(54, 136, 190, 0.836);
+border-radius:27px;
+}
+</style>
+
+<link rel="stylesheet" href="{% static 'css\login.css'%}"> 
+<html lang="en">
+
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>login.Must-Universty</title>
+  </head>
+  
+
+  <body style=" background-image: url({%static "images/log.jpg" %})"  class="background">
+    <div > 
+        <nav class="navv">
+          <a  href="https://maps.app.goo.gl/pNmyoj8NybrjW6ASA" target="_blank" class="location"><img  src="{% static 'images/pin.png'%}"  width="13" height="13"></img>Al Motamayz District-6th of October,egypt</a>
+          <a href="mailto:info@must.edu.eg" target="_blank class="mail"><img  src="{% static 'images/email.png'%}"  width="18" height="16"></img>info@must.edu.eg</a>
+          <a href="tel:16878" target="_blank" class="num"><img  src="{% static 'images/tele.png'%}"  width="16" height="14"></img>16878</a>
+        </nav>    
+
+        <h1><span><a href=" misruni">Home</a></span></h1>
+
+        <span class="logo">
+          <img  src="{% static 'images/logoo.png'%}"  width="140" height="140"></img>
+        </span>
+
+        
+          <form  method="post" >
+            {% csrf_token %}
+            <div class="subfo">
+            <h4 >You are almost done! One more step You are one of Us</h4>
+            <br>
+            <ion-icon name="person" class="icon"></ion-icon>
+            <input type="ID" name="logid" placeholder="Your ID"  required>
+            <ion-icon name="lock-closed" class="icon"></ion-icon>
+            <input type="password" name="logpass"  placeholder="Your Password"  required>
+            </div>
+            <button  href="#" class="btn ">submit</button>
+          </form>
+    </div>
+
+  </body>
+</html>
+     

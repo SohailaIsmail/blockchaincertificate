@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misr University</title>
+    <!-- Main Template CSS File -->
+    <link rel="stylesheet" href="{% static 'css/main.css'%}"> 
+    <!--Render all elements normally-->
+    {% comment %} <link rel="stylesheet" href="css/normalize.css"> {% endcomment %}
+    <!--Font Awesome Library-->
+    <link rel="stylesheet" href="{% static 'css/all.min.css'%}"> 
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body style=" background-image: url({%static "images/background.jpg" %})">
+
+    <header>
+
+
+        
+        <ul>
+            <a href= "https://maps.app.goo.gl/pNmyoj8NybrjW6ASA" target="_blank" class="fa-solid fa-location-dot"> Al Motamyez District</a>
+            <li><a href="mailto:info@must.edu.eg"> <i class="fa-solid fa-envelope"></i> info@must.edu.eg </a> </li>
+            <li> <a href="tel:16878"> <i class="fa-solid fa-phone"></i> 16878 </a> </li>
+        </ul>
+    </header>
+    
+    <section class="main"></section>
+    <div class="hero">
+      
+     
+      <img  class="lo" src="{% static 'images/logoo.png'%}" >
+      <div class="landing">
+        <div class="intro-text">
+            <h1>Welcome To Our University </h1>
+            <p>Education is the most powerful Weabon</p>
+            <br>
+            <br>
+            <a href="login.must" class="btn">Join Us</a>
+        </div>
+      </div>
+    </div>
+    <!--Start landing section-->
+   
+    </section>
+    <br>
+    <!--End landing section-->
+
+    <br>
+
+    <div class="cards">
+        <div class="card card1">
+            <div class="container">
+                <img src="{% static 'images/stud.jpg'%}"  alt="las vegas">
+            </div>
+            <div class="details">
+                <p>Every country has its own fundamental pillars, and Egypt's most valuable pillar is the youth. That's
+                    why the upcoming generations are the ones that will assist Egypt in its development and prosperity.
+                </p>
+            </div>
+        </div>
+        <div class="card card2">
+            <div class="container">
+                <img src="{% static 'images/stu.jpg'%}"  alt="New York">
+            </div>
+            <div class="details">
+
+                <p>But that will not happen in the blink of an eye , it needs persistence and determination. Above all
+                    that, it needs good quality of education because no tool is as important as knowledge. </p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="wrapper">
+        <img class="imgg" src="{% static 'images/misr.jpg'%}" alt="">
+        <div class="text-box">
+            <h3>Misr University for Science & Technology (MUST) is the first private university established in Egypt
+                with
+                nearly 20,000+ students. Since 1996, MUST has been recognized for effictiveness and notability of its
+                academic programs as well as the success of its sustainability efforts. Must is well known for its
+                dedication to excellence. It provides a great website where students can view and register for academic
+                courses and recently they can register for their accredited, and authenticated graduation certificate.
+            </h3>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <!--3 cards-->
+    <section class="articles">
+
+
+        <article>
+            <div class="article-wrapper">
+                <figure>
+                    <img src="{% static 'images/blue.jpg'%}"  alt="" />
+                </figure>
+                <div class="article-body">
+                    <h2>Opera</h2>
+                    <p>
+                        At MUST students tend to spend their leisure times doing beneficial activities. We mainly focus
+                        on arts as a soul feeding activity at our campus. MUST Opera House is considered the place where
+                        students are free to unleash their potentials in singing, acting, and playing musical
+                        instruments. Students are also free to join dancing activities and crafts making. MUST Opera
+                        House provides concerts, events, and shows. The school of talents at MUST Opera House prepares
+                        today’s generations to become tomorrow’s artists.
+                    </p>
+                    <a href="#" class="read-more">
+                        Read more <span class="sr-only">about this is some title</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </article>
+
+
+        <article>
+            <div class="article-wrapper">
+                <figure>
+                    <img src="{% static 'images/lib.jpg'%}"  alt="" />
+                </figure>
+                <div class="article-body">
+                    <h2>Library</h2>
+                    <p>
+                        MUST central library is the main component of the university libraries system. It is directed by
+                        the dean of the university libraries. With its unique and distinctive architectural design and
+                        up-to-date facilities, the library serves the academic community of faculty members,
+                        researchers, and students. Services include bibliographic information, interlibrary loan,
+                        references, access to information via CD-ROM and online link with information banks. Besides its
+                        general collection, the library owns specialized collections in specific areas such as medical
+                        and biological sciences, engineering, mass communications, business, languages, archaeology, and
+                        information technology.
+                    </p>
+                    <a href="#" class="read-more">
+                        Read more <span class="sr-only">about this is some title</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </article>
+
+        <article>
+            <div class="article-wrapper">
+                <figure>
+                    <img src="{% static 'images/stad.jpg'%}"  alt="" />
+                </figure>
+                <div class="article-body">
+                    <h2>Sports</h2>
+                    <p>
+                        At MUST we believe that a sound mind is in a sound body, therefore we tend to enhance our students’ capabilities by providing them with the necessary sports activities. At the campus, we have the country’s best athletics facilities. We have squash, tennis, basketball, handball, volleyball and a huge football court. Our courts attract students to practice sports and join teams to become professional players.
+
+                    </p>
+                    <a href="#" class="read-more">
+                        Read more <span class="sr-only">about this is some title</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </article>
+    </section>
+    <!-- partial -->
+    <br>
+    <br>
+    <br>
+    <footer>
+        <img class="logoo" src="{% static 'images/logoo.png'%}" alt="">
+        <div class="footer-content">
+            
+            <ul class="socials">
+                <li><a href="tel:16878" target="_blank"><i class="fa-solid fa-phone"></i> 16878</a></li>
+                <li><a href="https://maps.app.goo.gl/pNmyoj8NybrjW6ASA" target="_blank"><i class="fa-sharp fa-solid fa-location-dot"></i> Al Motamyez District - 6th of October, Egypt</a></li>
+                <li><a href="mailto:info@must.edu.eg"><i class="fa-solid fa-envelope"></i> info@must.edu.eg</a></li>
+            </ul>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

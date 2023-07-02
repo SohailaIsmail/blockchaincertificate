@@ -1,0 +1,151 @@
+.background{
+background-image: url(/static/images/keep.jpg);
+object-fit: cover;
+background-repeat: no-repeat;
+background-color: #cad0c2;
+}
+body {
+  background-image: url('must--800x532.jpg');
+  
+  background-attachment: cover;
+  
+}
+
+
+.reg-form {
+  background: #ffffff00;
+  box-sizing: border-box;
+  box-shadow: 2px 4px 8px rgba(73, 104, 95, 0.567);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 120px auto;
+  padding: 15px;
+  width: 600px;
+  ALIGN-CONTENT: CENTER;
+  }
+   
+  .form-heading {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 5px;
+  }
+   
+  .helper-text {
+    font-size: 30px;
+
+    text-align: right;
+  }
+  .field-row {
+    position: inherit;
+    width: 100%;
+  }
+.buttonn{
+  background: linear-gradient(180deg, #e3dcdc, #ead7d7);
+  padding: 5px;
+  font-size: 16px;
+  position: initial;
+  width: auto;
+  margin: 10px 25px 2px 90px;
+  }
+  .form-label {
+    display: inline-block;
+    font-size: 20px;
+    margin: 5px 200px 0;
+    text-align: right;
+    width: 100px;
+    color: rgb(197, 42, 42);
+  }
+   
+  .field {
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 240px;
+  }
+  .field.field-short {
+    width: 70px;
+  }
+
+  message {
+    display: inline-block;
+  }
+   
+  :required + .message::before {
+    content: "* ";
+  }
+
+
+  .text-field:focus:required:valid {
+    outline: green solid 2px;
+  }
+  .text-field:focus:required:invalid {
+    outline: orange solid 2px;
+  }
+  .date-field:focus:in-range {
+    outline: green solid 2px;
+  }
+  .date-field:focus:out-of-range {
+    outline: orange solid 2px;
+  }
+   
+  .website-field:focus:valid {
+    outline: green solid 2px;
+  }
+  .website-field:focus:invalid {
+    outline: orange solid 2px;
+  }
+
+
+
+  .form-button {
+    background: linear-gradient(180deg, #e3dcdc, #ead7d7);
+    border: none;
+    border-radius: 0;
+    color: rgb(10, 10, 10);
+    display: inline-block;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+
+  .first-name-field:focus:invalid + .message::after {
+    color: rgb(64, 134, 52);
+    content: "Required your first name";
+  }
+   
+  .last-name-field:focus:invalid + .message::after {
+    color: rgb(64, 134, 52);
+    content: "Required your last name";
+  }
+   
+  .dob-field:focus:out-of-range + .message::after {
+    color:  rgb(64, 134, 52);
+    content: "Date is out of range";
+  }
+   
+  .tel-field:focus:invalid + .message::after {
+    color:  rgb(64, 134, 52);
+    content: "Required telephone number";
+  }
+   
+  .email-field:focus:invalid + .message::after {
+    color: rgb(64, 134, 52);
+    content: "Required email address";
+  }
+  .hs-field:focus:invalid + .message::after {
+    color: rgb(64, 134, 52);
+    content: "Required high school name";
+  }
+   
+  .address-field:focus:invalid + .message::after {
+    color: rgb(64, 134, 52);
+    content: "Required permanent address";
+  }
+   
+  .website-field:focus:invalid + .message::after {
+    color:  rgb(64, 134, 52);
+    content: "Required valid URL";
+  }
